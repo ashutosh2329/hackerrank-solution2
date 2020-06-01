@@ -1,0 +1,2 @@
+python == 3.6 or greater version
+Text editor == sublime 3 or VSC or Pycharm
