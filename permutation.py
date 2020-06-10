@@ -1,34 +1,34 @@
-#!/bin/python3
+# #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
+# import math
+# import os
+# import random
+# import re
+# import sys
 
-# Complete the permutationEquation function below.
-def permutationEquation(p):
-    lis=[]
-    for i in range(1,len(p)+1):
-        for j in range(len(p)):
-            if(i==p[j]):
-                for k in range(len(p)):
-                    if(j+1==p[k]):
-                        lis.append(k+1)
-                        break
-                break
-    return lis
+# # Complete the permutationEquation function below.
+# def permutationEquation(p):
+#     lis=[]
+#     for i in range(1,len(p)+1):
+#         for j in range(len(p)):
+#             if(i==p[j]):
+#                 for k in range(len(p)):
+#                     if(j+1==p[k]):
+#                         lis.append(k+1)
+#                         break
+#                 break
+#     return lis
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    n = int(input())
+#     n = int(input())
 
-    p = list(map(int, input().rstrip().split()))
+#     p = list(map(int, input().rstrip().split()))
 
-    result = permutationEquation(p)
+#     result = permutationEquation(p)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
+#     fptr.write('\n'.join(map(str, result)))
+#     fptr.write('\n')
 
-    fptr.close()
+#     fptr.close()
