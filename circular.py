@@ -1,42 +1,42 @@
-#!/bin/python3
+# #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
+# import math
+# import os
+# import random
+# import re
+# import sys
 
-# Complete the circularArrayRotation function below.
-def circularArrayRotation(a, k, queries):
-    lis =[]
-    rotation = k%len(a) 
-    for i in queries:
-        lis.append(a[i-rotation])
-    return lis
+# # Complete the circularArrayRotation function below.
+# def circularArrayRotation(a, k, queries):
+#     lis =[]
+#     rotation = k%len(a) 
+#     for i in queries:
+#         lis.append(a[i-rotation])
+#     return lis
 
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    nkq = input().split()
+#     nkq = input().split()
 
-    n = int(nkq[0])
+#     n = int(nkq[0])
 
-    k = int(nkq[1])
+#     k = int(nkq[1])
 
-    q = int(nkq[2])
+#     q = int(nkq[2])
 
-    a = list(map(int, input().rstrip().split()))
+#     a = list(map(int, input().rstrip().split()))
 
-    queries = []
+#     queries = []
 
-    for _ in range(q):
-        queries_item = int(input())
-        queries.append(queries_item)
+#     for _ in range(q):
+#         queries_item = int(input())
+#         queries.append(queries_item)
 
-    result = circularArrayRotation(a, k, queries)
+#     result = circularArrayRotation(a, k, queries)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
+#     fptr.write('\n'.join(map(str, result)))
+#     fptr.write('\n')
 
-    fptr.close()
+#     fptr.close()
